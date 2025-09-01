@@ -25,3 +25,6 @@ Thumbs.db
 
 # Others
 node_modules/
+
+# Spring Boot application config
+/src/main/resources/application.yml
