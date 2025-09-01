@@ -1,3 +1,5 @@
+/* To make this project workable locally copy this application.yml.example inside the application.yml along with the real credentials  */
+
 server:
   port: 8080
   servlet:
