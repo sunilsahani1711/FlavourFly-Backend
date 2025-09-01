@@ -1,0 +1,1 @@
+package com.flavourfly.dto; public record OrderDto(Long id, String status, java.time.Instant placedAt, String paymentMethod, Object address, java.util.List<Object> items, java.math.BigDecimal totalAmount) {}
