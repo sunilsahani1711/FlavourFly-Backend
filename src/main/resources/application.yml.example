@@ -1,0 +1,37 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/flavourfly?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: DB_USERNAME_HERE
+    password: DB_PASSWORD_HERE
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: MAIL_USERNAME_HERE
+    password: MAIL_PASSWORD_HERE
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+app:
+  jwt:
+    secret: JWT_SECRET_HERE
+    expiration: 86400000
+
+cors:
+  allowed-origins: "http://localhost:3000,http://localhost:5173"
+  allowed-methods: "GET,POST,PATCH,PUT,DELETE,OPTIONS"
+  allowed-headers: "Authorization,Content-Type"
